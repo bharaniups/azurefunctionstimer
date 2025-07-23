@@ -33,7 +33,7 @@ namespace Azurefunctionstimer
             var json = JsonSerializer.Serialize(payload);
             var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-            var response = await client.PostAsync("https://azurefunctionswebapi-c2c9d6dkd8gdbjc2.centralindia-01.azurewebsites.net/resize", content);
+            var response = await client.PostAsync("https://azurefunctionswebapi-c2c9d6dkd8gdbjc2.centralindia-01.azurewebsites.net/customers/resize", content);
 
             if (response.IsSuccessStatusCode)
             {
